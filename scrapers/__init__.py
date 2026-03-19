@@ -1,11 +1,13 @@
 from .remoteok import RemoteOKScraper
-from .indeed import IndeedScraper
 from .linkedin import LinkedInScraper
-from .glassdoor import GlassdoorScraper
+from .themuse import TheMuseScraper
+from .adzuna import AdzunaScraper
+from .arbeitnow import ArbeitnowScraper
 
 ALL_SCRAPERS = [
-    RemoteOKScraper(),
-    IndeedScraper(),
-    LinkedInScraper(),
-    GlassdoorScraper(),
+    RemoteOKScraper(),      # Free, no auth - remote jobs
+    LinkedInScraper(),      # HTML scraping - general jobs
+    TheMuseScraper(),       # Free API, no auth - general jobs
+    AdzunaScraper(),        # Free API, requires key - great salary data
+    ArbeitnowScraper(),     # Free API, no auth - tech/remote jobs
 ]
