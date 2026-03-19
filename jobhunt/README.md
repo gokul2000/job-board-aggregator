@@ -20,8 +20,8 @@ A Python CLI tool that aggregates job listings from multiple job boards, filters
 
 ```bash
 # Clone the repository
-git clone https://github.com/gokul2000/job-board-aggregator.git
-cd job-board-aggregator
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
 
 # Create a virtual environment
 python3 -m venv venv
