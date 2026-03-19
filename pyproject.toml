@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobhunt-board-aggregator"
+version = "1.0.0"
+description = "A CLI tool that aggregates job listings from multiple job boards"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    {name = "Gokul"}
+]
+keywords = ["job-search", "cli", "web-scraping", "job-board"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.28",
+    "beautifulsoup4>=4.11",
+    "lxml>=4.9",
+]
+
+[project.scripts]
+jobhunt = "jobhunt.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gokul2000/job-board-aggregator"
+Repository = "https://github.com/gokul2000/job-board-aggregator"
